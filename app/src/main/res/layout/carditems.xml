@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    android:elevation="5dp"
+    android:layout_margin="10dp"
+    android:id="@+id/newscard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/color2">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/frame"
+            android:padding="5dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:id="@+id/headlines_image"
+                android:src="@drawable/ic_launcher_background"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/bottom_color_grey"
+                    android:background="@drawable/grey_bottom"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="09/02/2020"
+                android:id="@+id/date"
+                android:textColor="#000"
+                android:layout_marginTop="220dp"
+                android:layout_marginLeft="290dp"/>
+            </RelativeLayout>
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/headlines_title"
+            android:text="title"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:fontFamily="@font/fira_sans"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/author"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:text="author"
+            android:fontFamily="@font/fira_sans"
+            android:padding="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/description"
+            android:text="headlines_description"
+            android:fontFamily="@font/fira_sans"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
