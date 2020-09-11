@@ -10,7 +10,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity android:name=".news_headlines"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -22,6 +22,25 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".fields.business"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fields.sports"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fields.health"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fields.entertainment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fields.science"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fields.technology"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

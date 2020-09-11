@@ -31,7 +31,7 @@
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"
+                    android:layout_height="250dp"
                     android:id="@+id/bottom_color_grey"
                     android:background="@drawable/grey_bottom"/>
 
@@ -40,40 +40,44 @@
                 android:layout_height="wrap_content"
                 android:text="09/02/2020"
                 android:id="@+id/date"
-                android:textColor="#000"
+                android:textColor="#fff"
                 android:layout_marginTop="220dp"
                 android:layout_marginLeft="290dp"/>
             </RelativeLayout>
         </FrameLayout>
 
         <TextView
+            android:id="@+id/headlines_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/headlines_title"
+            android:fontFamily="@font/roboto_bold"
+            android:padding="10dp"
             android:text="title"
-            android:textColor="#000"
-            android:textSize="20dp"
-            android:fontFamily="@font/fira_sans"
-            android:padding="10dp"/>
+            android:textColor="#fff"
+            android:textSize="18dp"
+            app:fontFamily="sans-serif-black" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:id="@+id/author"
-            android:textSize="20dp"
-            android:textColor="#000"
-            android:text="author"
-            android:fontFamily="@font/fira_sans"
-            android:padding="10dp"/>
-        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/"
+            android:padding="10dp"
+            android:text="author"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            app:fontFamily="sans-serif-medium" />
+
+        <TextView
             android:id="@+id/description"
-            android:text="headlines_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:fontFamily="@font/fira_sans"
-            android:textSize="20dp"
-            android:textColor="#000"
-            android:padding="10dp"/>
+            android:padding="10dp"
+            android:text="headlines_description"
+            android:textColor="#fff"
+            android:textSize="17dp"
+            app:fontFamily="sans-serif-medium" />
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>
